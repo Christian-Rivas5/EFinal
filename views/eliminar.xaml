@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EFinal.views.eliminar"
+             Title="eliminar">
+    <VerticalStackLayout>
+
+        <StackLayout Padding="20" Spacing="15">
+            <Label Text="Buscar Persona" FontSize="24" FontAttributes="Bold" HorizontalOptions="Center"/>
+
+            <Entry x:Name="TxtCedula" Placeholder="Ingrese la cédula" />
+
+            <Button Text="Buscar" Clicked="buscar_cliked" />
+
+            <Label Text="ID: " />
+            <Label x:Name="LblId" />
+
+            <Label Text="Cédula: " />
+            <Label x:Name="LblCedula" />
+
+            <Label Text="Nombre: " />
+            <Label x:Name="LblNombre" />
+
+            <Label Text="Apellido: " />
+            <Label x:Name="LblApellido" />
+
+
+            <Button Text="Eliminar" Clicked="Eliminar_Clicked"/>
+
+        </StackLayout>
+    </VerticalStackLayout>
+</ContentPage>
